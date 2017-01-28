@@ -1,32 +1,38 @@
-\documentclass[letterpaper,10pt,oneside]{article}
+\documentclass[letterpaper,11pt,oneside]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 
-\usepackage[left=1in, right=1.5in, bottom=0.75in, top=0.50in]{geometry}
+\usepackage[left=0.3in, right=1in, bottom=0.4in, top=0.40in]{geometry}
 
 \usepackage[dvipsnames]{xcolor}
 \definecolor{orange}{RGB}{127,127,160}
 
 \usepackage{hyperref}
 \hypersetup{colorlinks,urlcolor=orange}
-
+\usepackage{setspace}
 \usepackage{bookman}
 \usepackage{array}
 \usepackage[export]{adjustbox}
+\usepackage[document]{ragged2e}
 \renewcommand{\labelitemi}{$\diamond$}
 \pagenumbering{gobble}
 \begin{document}
-    \begin{tabular}{m{1.5in} m{2.7in}}
-        \includegraphics[width=2in,right]{photo.png} &
+    \begin{tabular}{m{3.5in} m{3in}}
+        \includegraphics[width=2in,left]{photo.png} &
         \vspace{0.5in}
-        \Huge{\textit{Paolo Veronelli}}  \newline
-        \begin{center}
-        \normalsize{\href{https://github.com/paolino}{github.com/paolino}}  
-        \newline
-        \normalsize{\href{mailto:paolo.veronelli@gmail.com}{paolo.veronelli@gmail.com}}
-        \end{center}
+
+        \begin{flushright}
+        {
+        \Huge{Paolo Veronelli}  
+        \noindent\rule{2.5in}{0.2pt}
+        \begin{normalsize}
+        \href{https://github.com/paolino}{github.com/paolino}  
+        \href{mailto:paolo.veronelli@gmail.com}{paolo.veronelli@gmail.com}
+        \end{normalsize}
+        }
+        \end{flushright}
         \end{tabular}
-    \vspace{0.2in}
+    \vspace{0.1in}
     \section*{Education}
         \begin{itemize}
             \item High School, 1984-1989.
@@ -50,7 +56,7 @@
             \item 1D and 2D genetic search algorithms for stock cut of wood and glass (Haskell), 2013-2014 
             \item Self organizing mesh of radio nodes , prototype and simulator (C, Arduino, Haskell) , 2014 
             \item QR driven environmental game for the Festival della Comunicazione (Haskell), 2015 
-            \item Persistent structures for sub-linear operations in link-cut trees  (Haskell), 2016-now  
+            \item Persistent structures for sub-linear operations in link-cut trees, a PhD cooperation (prof. Juan Carlos Saenz Carrasco) (Haskell), 2016-now  
             \item Tram-line discrete event simulation (Haskell), 2016 
         \end{itemize}
 
