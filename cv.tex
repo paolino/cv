@@ -1,7 +1,8 @@
 \documentclass[letterpaper,10pt,oneside]{article}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 
-\usepackage[left=1in, right=1.5in, bottom=0.75in, top=0.75in]{geometry}
+\usepackage[left=1in, right=1.5in, bottom=0.75in, top=0.50in]{geometry}
 
 \usepackage[dvipsnames]{xcolor}
 \definecolor{orange}{RGB}{127,127,160}
@@ -10,17 +11,22 @@
 \hypersetup{colorlinks,urlcolor=orange}
 
 \usepackage{bookman}
-
+\usepackage{array}
+\usepackage[export]{adjustbox}
 \renewcommand{\labelitemi}{$\diamond$}
-
+\pagenumbering{gobble}
 \begin{document}
-    \begin{center}
-        \Huge{\textit{Paolo Veronelli}} \\
-        \vspace{1em}
-        \normalsize{\href{https://github.com/paolino}{github.com/paolino}} \\ 
+    \begin{tabular}{m{1.5in} m{2.7in}}
+        \includegraphics[width=2in,right]{photo.png} &
+        \vspace{0.5in}
+        \Huge{\textit{Paolo Veronelli}}  \newline
+        \begin{center}
+        \normalsize{\href{https://github.com/paolino}{github.com/paolino}}  
+        \newline
         \normalsize{\href{mailto:paolo.veronelli@gmail.com}{paolo.veronelli@gmail.com}}
-    \end{center}
-
+        \end{center}
+        \end{tabular}
+    \vspace{0.2in}
     \section*{Education}
         \begin{itemize}
             \item High School, 1984-1989.
