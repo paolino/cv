@@ -1,37 +1,33 @@
-\documentclass[letterpaper,12pt,oneside]{article}
+
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,10pt,oneside]{article}
 \usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-
-\usepackage[left=0.3in, right=1in, bottom=0.4in, top=0in]{geometry}
-
-\usepackage[dvipsnames]{xcolor}
-\definecolor{orange}{RGB}{127,127,160}
 
 \usepackage{hyperref}
-\hypersetup{colorlinks,urlcolor=orange}
-\usepackage{setspace}
-\usepackage{newtxtext}
-\usepackage{array}
-\usepackage[export]{adjustbox}
-\usepackage[document]{ragged2e}
-\renewcommand{\labelitemi}{$\diamond$}
-\pagenumbering{gobble}
-\begin{document}
-    \begin{tabular}{m{4.2in} m{2.5in}}
-        \includegraphics[width=1.8in,left]{photo.png} &
-        \vspace{1in}
 
-        \begin{flushright}
-        {
-        \Huge{Paolo Veronelli}  
-        \noindent\rule{2.5in}{0.2pt}
-        \begin{normalsize}
-        \href{https://github.com/paolino}{github.com/paolino}  
-        \href{mailto:paolo.veronelli@gmail.com}{paolo.veronelli@gmail.com}
-        \end{normalsize}
-        }
-        \end{flushright}
-        \end{tabular}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage[left=0.5in, right=0.5in, bottom=0.25in, top=0.75in]{geometry}
+\definecolor{orange}{RGB}{127,127,160}
+
+\hypersetup{colorlinks,urlcolor=orange}
+\usepackage{sectsty}
+
+\ttfamily
+\sectionfont{\fontsize{12}{15}\selectfont}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+    \begin{center}
+        \Huge{Paolo Veronelli} \\
+        \vspace{1em}
+        \normalsize{\href{https://github.com/paolino}{github.com/paolino}} \\ 
+        \normalsize{\href{mailto:paolo.veronelli@gmail.com}{paolo.veronelli@gmail.com}}
+    \end{center}
+
+    \renewcommand{\labelitemi}{$\diamond$}
     \section*{Education}
         \begin{itemize}
             \item High School, 1984-1989.
@@ -40,6 +36,8 @@
             \item Functional programming principles (\href{https://www.coursera.org/account/accomplishments/certificate/8NVXL4Y3XUB6}{certificate}) (Scala), 2016
             \item Functional programming design (\href{https://www.coursera.org/account/accomplishments/certificate/WTU8B8G54N79}{certificate}) (Scala), 2016
             \item Parallel Programming (\href{https://www.coursera.org/account/accomplishments/certificate/YU7BSRL8VFTT}{certificate}) (Scala), 2017
+            \item 
+            Big Data Analysis with Scala and Spark, Coursera, April 2017
         \end{itemize}
     \section*{Works}
         \begin{itemize}
@@ -55,9 +53,9 @@
             \item 1D and 2D genetic search algorithms for stock cut of wood and glass (Haskell), 2013-2014 
             \item Self organizing mesh of radio nodes , prototype and simulator (C, Arduino, Haskell) , 2014 
             \item QR driven environmental game for the Festival della Comunicazione (Haskell), 2015 
-            \item Persistent structures for sub-linear operations in link-cut trees, a PhD cooperation (prof. Juan Carlos Saenz Carrasco) (Haskell), 2016-now  
+            \item Persistent structures for sub-linear operations in link-cut trees  (Haskell), 2016-now  
             \item Tram-line discrete event simulation (Haskell), 2016 
         \end{itemize}
-
 \end{document}
+
 
